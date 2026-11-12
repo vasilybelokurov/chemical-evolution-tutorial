@@ -1,0 +1,18 @@
+title: Chemical evolution of dwarf galaxies
+author: Vasily Belokurov
+copyright: "2026"
+only_build_toc_files: true
+exclude_patterns: [_build, .pytest_cache, "**/.pytest_cache", README.md, AGENTS.md, STRUCTURE.md, HANDOVER.md, data, data_build, prototypes]
+
+execute:
+  execute_notebooks: 'off'     # notebooks are executed (and checked) by pytest --nbmake --overwrite in CI
+  timeout: 1200
+
+launch_buttons:
+  colab_url: https://colab.research.google.com
+  notebook_interface: classic
+
+sphinx:
+  config:
+    html_show_copyright: false
+    myst_links_external_new_tab: true

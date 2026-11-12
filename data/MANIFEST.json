@@ -1,0 +1,71 @@
+{
+  "created": "2026-11-12",
+  "status": "development copy; not yet a published release",
+  "source": "copied unchanged from ~/Work/Code/cerium_bump (git 7c52f48): results/samples/*_h21.ecsv, results/samples/{membership_audit.json,h21_membership_summary.csv}, data/external/hasselquist2021_table2.ecsv",
+  "built_by": "cerium_bump src/dwarf_vice/observations.py::build_samples (H21 Table-2 IDs joined to allStarLite-dr17-synspec_rev1.fits; unique EXTRATARG bit-4-clear observation per ID)",
+  "membership_table": "Hasselquist et al. 2021, ApJ 923, 172, Table 2 (doi:10.3847/1538-4357/ac25f9)",
+  "known_issues": [
+    "GSE Table 2 has 1823 rows vs 972 in H21 Table 1",
+    "11 IDs are in both GSE and Sgr"
+  ],
+  "files": {
+    "fornax_h21.ecsv": {
+      "bytes": 38136,
+      "sha256": "833dc01144c717b89d1be349390a7ccc615fda2d8e76ac0056e0ee1999447d89",
+      "rows": 192
+    },
+    "gse_h21.ecsv": {
+      "bytes": 364703,
+      "sha256": "b2fa9f681d4e4c9a183db15d0e05f396c7b1e695966ee857b2045d0b8a175b16",
+      "rows": 1823
+    },
+    "h21_grid_flexce.npz": {
+      "bytes": 24509099,
+      "sha256": "d34a3a2210c010c1cc07f74f017cdce0ba13e5ecfba6e10e8c30ee87a2797db9",
+      "source": "prototypes/h21_vice/run_grid.py flexce + pack_grid.py: same 3403 models in flexCE 2450aa29 via chemical_evolution gce_tools.flexce_h21 (commit 76acf11), 30 Myr steps; same keys as h21_grid_vice.npz but time (400,) and tracks (3403, 400) float32"
+    },
+    "h21_grid_scores.csv": {
+      "bytes": 578359,
+      "sha256": "38fe9acd6bd8b2327a444b27362b47a416050d4c195203cd947e423d406e98fb",
+      "source": "prototypes/h21_vice/score_grid.py: chi2_track + chi2_endpoint per model and engine against the *_h21.ecsv samples"
+    },
+    "h21_grid_vice.npz": {
+      "bytes": 19731014,
+      "sha256": "b8f81b38fdd047bccf7ac341ce2b9c7d5ffdda52959b9c2036df89abe8ed39f0",
+      "source": "prototypes/h21_vice/run_grid.py vice + pack_grid.py: full H21 Table-4 grid (3403 models: LMC 625, SMC 750, Sgr 625, GSE 143, Fornax 1260), VICE 1.3.1, dt 0.03 Gyr, 12 Gyr; keys galaxy, sfe0, eta, tau_i, tau_b, sigma_b, f_b (NaN = unused), time (401,), sfr/mgas/feh/sife/mgfe (3403, 401) float32; chi2 matches cerium_bump h21_matched_dt0.03.csv to 1.2e-7"
+    },
+    "h21_membership_summary.csv": {
+      "bytes": 300,
+      "sha256": "bb4b04632c8d5f0f663784e1ca62fdd6a0dfcc775896eaaf2d8302c214babd1b"
+    },
+    "h21_ssp_bundle.npz": {
+      "bytes": 6107618,
+      "sha256": "7d66e088a5b00a93b5f619cc7df7ed10a156360ab318c8680b9d0b06a777cba5",
+      "source": "cerium_bump results/yields/h21_ssp_bundle.npz (built by src/dwarf_vice/yields.py::build_bundle from public flexCE 2450aa29 yields: LC06/CL04 CCSN, Karakas10 AGB, Iwamoto99 W70 SN Ia; validation in cerium_bump results/yields/h21_yield_validation.json)"
+    },
+    "hasselquist2021_table2.ecsv": {
+      "bytes": 184931,
+      "sha256": "db3fc69b60232f1d3e4907a0b5f6cd7c997fcc08b858291f1d655a360e370731",
+      "rows": 8016
+    },
+    "lmc_h21.ecsv": {
+      "bytes": 739300,
+      "sha256": "fecd9c09d1f814f5ffe50f0be4675b4905334797d2e3bb405bad0360e2e727da",
+      "rows": 3909
+    },
+    "membership_audit.json": {
+      "bytes": 131215,
+      "sha256": "8b45e74b45c637c5f9242f8e1ee7d47a5a53ce95f2526d701a35d4f14dafaef4"
+    },
+    "sgr_h21.ecsv": {
+      "bytes": 183658,
+      "sha256": "5f3788997eada3793578770198ca2d8f4d1c4bf210edc8e83008bcba17f0eada",
+      "rows": 946
+    },
+    "smc_h21.ecsv": {
+      "bytes": 227536,
+      "sha256": "982c83fb0eca308fed0a713c5d270cdb9d317d0f44bcb917bf1f38bce4037339",
+      "rows": 1146
+    }
+  }
+}

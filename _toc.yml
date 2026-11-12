@@ -1,0 +1,9 @@
+format: jb-book
+root: intro
+chapters:
+  - file: notebooks/00_data
+  - file: notebooks/01_one_zone
+  - file: notebooks/02_yields_delays
+  - file: notebooks/03_vice
+  - file: notebooks/04_fitting
+  - file: notebooks/05_beyond_the_track

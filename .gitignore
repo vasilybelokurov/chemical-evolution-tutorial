@@ -1,0 +1,13 @@
+__pycache__/
+.venv/
+.ipynb_checkpoints/
+.DS_Store
+_build/
+.pytest_cache/
+data_build/
+notebooks/data/
+prototypes/h21_vice/grid_runs/
+# private: author's working notes and unpublished-data prototypes
+HANDOVER.md
+prototypes/h21_vice/plot_lmc_mass_per_feh.py
+prototypes/h21_vice/figures/lmc_mass_per_feh.png

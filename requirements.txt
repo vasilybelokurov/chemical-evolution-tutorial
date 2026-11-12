@@ -1,0 +1,8 @@
+# Python 3.13 (Colab's version). VICE: first `pip install "cython>=3.0,<3.1" setuptools`, then
+# `pip install --no-build-isolation vice==1.3.1` (a plain install fails with Cython >= 3.1).
+numpy==2.5.3
+scipy==1.18.1
+matplotlib==3.11.1
+pandas==2.3.3
+astropy==8.0.1
+vice==1.3.1

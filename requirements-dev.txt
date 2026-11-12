@@ -1,0 +1,4 @@
+-r requirements.txt
+pytest==9.1.1
+nbmake==1.5.5
+jupyter-book==1.0.4.post1
